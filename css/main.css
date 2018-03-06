@@ -1,0 +1,221 @@
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  height: 1000px;
+  background: #F9FCFE; }
+
+.container {
+  width: 75%;
+  margin: 0 auto; }
+
+header {
+  background-image: url("../img/head.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 800px; }
+  header nav {
+    height: 100px;
+    line-height: 100px;
+    font-size: 0; }
+  header .logo {
+    display: inline-block;
+    width: 10%;
+    text-align: center; }
+    header .logo img {
+      vertical-align: middle; }
+  header .menu {
+    height: 100px;
+    display: inline-block;
+    width: 90%;
+    text-align: right;
+    vertical-align: top; }
+    header .menu li {
+      display: inline-block;
+      padding-right: 25px; }
+      header .menu li:last-of-type {
+        padding-right: 0; }
+      header .menu li a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 100;
+        width: 100%;
+        height: 100%; }
+        header .menu li a::after {
+          content: '';
+          display: block;
+          width: 85%;
+          margin: 0 auto;
+          height: 35px;
+          margin-top: -35px;
+          transition: all .5s;
+          opacity: 0;
+          position: relative;
+          bottom: -100px; }
+        header .menu li a::before {
+          content: '';
+          opacity: 0;
+          display: block;
+          width: 85%;
+          margin: 0 auto;
+          height: 35px;
+          transition: all .5s;
+          margin-bottom: -35px;
+          position: relative;
+          top: -100px; }
+        header .menu li a:hover::after {
+          opacity: 1;
+          bottom: 0;
+          background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.2)); }
+        header .menu li a:hover::before {
+          opacity: 1;
+          background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.2));
+          top: 0; }
+  header .general {
+    display: inline-block;
+    width: 100%;
+    margin-top: 120px;
+    text-align: center;
+    padding-bottom: 100px; }
+    header .general img {
+      padding-bottom: 15px; }
+    header .general p {
+      line-height: 30px;
+      height: 90px;
+      margin: 0 auto;
+      width: 50%;
+      color: #fff;
+      font-size: 15pt;
+      padding-bottom: 40px; }
+    header .general a {
+      padding: 7px 15px;
+      font-size: 20pt;
+      text-decoration: none;
+      color: #fff;
+      border: 3px solid #fff; }
+  header .scroll {
+    background-image: url("../img/Sep-bot.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 181px;
+    width: 100%;
+    z-index: 1; }
+    header .scroll i {
+      padding-top: 100px;
+      font-size: 30px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      position: relative; }
+    header .scroll p {
+      padding-top: 5px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      position: relative; }
+
+.service {
+  padding-top: 30px; }
+  .service::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 181px;
+    background-image: url("../img/Sep-top.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 10; }
+
+.title {
+  text-align: center;
+  color: #F9FCFE; }
+  .title h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15pt; }
+    .title h2::after {
+      content: '';
+      width: 50px;
+      height: 5px;
+      background: #F9FCFE;
+      display: block;
+      margin: 0 auto;
+      margin-top: 7px;
+      border-radius: 22px; }
+
+.-blue {
+  color: #327BF1; }
+  .-blue h2::after {
+    background: #327BF1; }
+
+.service__raw {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 35px; }
+  .service__raw .raw__elm {
+    text-align: center;
+    color: #889091; }
+    .service__raw .raw__elm i {
+      font-size: 55pt;
+      margin-bottom: 15px; }
+    .service__raw .raw__elm h3 {
+      font-size: 15pt;
+      margin-bottom: 10px; }
+    .service__raw .raw__elm p {
+      line-height: 30px;
+      width: 80%;
+      margin: 0 auto; }
+
+.portfolio {
+  background-image: url("../img/portfolio.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 800px;
+  top: -10%;
+  z-index: 10;
+  padding-top: 40px; }
+  .portfolio::after {
+    content: '';
+    display: block;
+    background-image: url("../img/Sep-bot.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 181px;
+    width: 100%;
+    position: relative;
+    top: 620px; }
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 170px; }
+
+.gallery {
+  margin-top: 45px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center; }
+  .gallery img {
+    height: 175px;
+    background: #000; }
